@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>শিক্ষক দিচ্ছি ও নিচ্ছি</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f4f7f8;color:#16202a}
+header{background:#075e54;color:#fff;padding:15px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:9}.logo{font-size:23px;font-weight:bold}nav a{color:#fff;text-decoration:none;margin-left:16px}
+.hero{padding:65px 6%;text-align:center;background:linear-gradient(135deg,#075e54,#1769aa);color:#fff}.hero h1{font-size:40px;margin:0 0 12px}.hero p{font-size:18px}
+.btn,button{border:0;border-radius:8px;padding:12px 19px;background:#ffc107;color:#111;font-weight:bold;text-decoration:none;cursor:pointer;display:inline-block;margin:5px}
+.container{width:88%;max-width:1100px;margin:38px auto}.title{text-align:center;margin-bottom:22px}.cards,.people{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.person,form,.admin{background:#fff;padding:22px;border-radius:14px;box-shadow:0 5px 18px #0001}.card h3{color:#075e54}
+form{max-width:850px;margin:auto}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-weight:bold;font-size:14px}input,select,textarea{width:100%;padding:11px;margin-top:6px;border:1px solid #ccd4da;border-radius:7px;font-size:15px}textarea{min-height:90px}.full{grid-column:1/-1}
+.search{background:#e9f4f1;padding:22px;border-radius:14px}.searchgrid{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px}.person h3{margin-top:0}.tag{display:inline-block;background:#e4f3ef;color:#075e54;padding:5px 8px;border-radius:15px;font-size:12px;margin:2px}
+.admin{overflow:auto}.admin table{width:100%;border-collapse:collapse}.admin th,.admin td{padding:10px;border-bottom:1px solid #ddd;text-align:left;white-space:nowrap}.danger{background:#dc3545;color:white}
+.contact{text-align:center;background:#e8f5f1;padding:30px;border-radius:14px}footer{background:#172333;color:#fff;text-align:center;padding:25px;margin-top:40px}
+#loginBox{max-width:420px;margin:auto}#adminArea{display:none}
+@media(max-width:750px){header{display:block}nav{margin-top:12px}nav a{margin:0 10px 0 0}.hero h1{font-size:30px}.cards,.people{grid-template-columns:1fr}.grid,.searchgrid{grid-template-columns:1fr}.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header><div class="logo">📚 শিক্ষক দিচ্ছি ও নিচ্ছি</div>
+<nav><a href="#home">হোম</a><a href="#teacher">শিক্ষক নিবন্ধন</a><a href="#guardian">অভিভাবক</a><a href="#find">শিক্ষক খুঁজুন</a><a href="#admin">Admin</a></nav></header>
+
+<section class="hero" id="home"><h1>যোগ্য শিক্ষক খুঁজুন, সহজে টিউশন পান</h1>
+<p>শিক্ষক ও অভিভাবকদের মধ্যে টিউশন সংযোগের সহজ প্ল্যাটফর্ম</p>
+<a class="btn" href="#teacher">শিক্ষক নিবন্ধন</a><a class="btn" href="#guardian">শিক্ষক প্রয়োজন</a></section>
+
+<section class="container"><div class="title"><h2>আমাদের সেবা</h2></div>
+<div class="cards"><div class="card"><h3>👨‍🏫 শিক্ষক নিবন্ধন</h3><p>যোগ্যতা, বিষয় ও এলাকা দিয়ে প্রোফাইল তৈরি করুন।</p></div>
+<div class="card"><h3>👨‍👩‍👧 অভিভাবকের চাহিদা</h3><p>সন্তানের জন্য প্রয়োজনীয় শিক্ষক সম্পর্কে তথ্য পাঠান।</p></div>
+<div class="card"><h3>🔎 শিক্ষক খুঁজুন</h3><p>বিষয় ও এলাকার ভিত্তিতে শিক্ষক খুঁজে দেখুন।</p></div></div></section>
+
+<section class="container" id="teacher"><div class="title"><h2>👨‍🏫 শিক্ষক নিবন্ধন</h2></div>
+<form id="teacherForm"><div class="grid">
+<div><label>নাম</label><input id="tn" required></div><div><label>মোবাইল/WhatsApp</label><input id="tp" required></div>
+<div><label>যোগ্যতা</label><input id="tq" placeholder="যেমন: BSc Honours"></div><div><label>শ্রেণি</label><input id="tc" placeholder="যেমন: ৬-১০"></div>
+<div><label>বিষয়</label><input id="ts" required placeholder="যেমন: গণিত"></div><div><label>এলাকা</label><input id="ta" required placeholder="যেমন: সেনহাটি"></div>
+<div class="full"><label>অভিজ্ঞতা</label><textarea id="te"></textarea></div><div class="full"><button>নিবন্ধন সংরক্ষণ করুন</button></div></div></form></section>
+
+<section class="container" id="guardian"><div class="title"><h2>👨‍👩‍👧 অভিভাবকের শিক্ষক চাহিদা</h2></div>
+<form id="guardianForm"><div class="grid">
+<div><label>অভিভাবকের নাম</label><input id="gn" required></div><div><label>মোবাইল/WhatsApp</label><input id="gp" required></div>
+<div><label>শ্রেণি</label><input id="gc" required></div><div><label>বিষয়</label><input id="gs" required></div>
+<div><label>এলাকা</label><input id="ga" required></div><div><label>সময়</label><input id="gt"></div>
+<div class="full"><label>অতিরিক্ত তথ্য</label><textarea id="gx"></textarea></div><div class="full"><button>চাহিদা সংরক্ষণ করুন</button></div></div></form></section>
+
+<section class="container" id="find"><div class="title"><h2>🔎 শিক্ষক খুঁজুন</h2></div>
+<div class="search"><div class="searchgrid"><input id="query" placeholder="নাম/বিষয়/এলাকা লিখুন"><select id="subject"><option value="">সব বিষয়</option><option>গণিত</option><option>ইংরেজি</option><option>বাংলা</option><option>বিজ্ঞান</option></select><input id="area" placeholder="এলাকা"><button onclick="render()">খুঁজুন</button></div></div>
+<div class="people" id="teacherList" style="margin-top:18px"></div></section>
+
+<section class="container" id="admin"><div class="title"><h2>🔐 Admin Panel</h2><p>ডেমো অ্যাডমিন অংশ</p></div>
+<div id="loginBox" class="admin"><input id="pass" type="password" placeholder="Admin Password"><button onclick="login()">Login</button><small> ডেমো পাসওয়ার্ড: 1234</small></div>
+<div id="adminArea" class="admin"><h3>শিক্ষক নিবন্ধন</h3><div id="teacherTable"></div><hr><h3>অভিভাবকের চাহিদা</h3><div id="guardianTable"></div><button class="danger" onclick="clearAll()">সব ডেটা মুছুন</button></div></section>
+
+<section class="container"><div class="contact"><h2>📞 যোগাযোগ</h2><p>সেনহাটি, দিঘলিয়া, খুলনা</p><p><b>WhatsApp: ০১৬০৯১৫৮৫৫৮</b></p><a class="btn" href="https://wa.me/8801609158558">WhatsApp-এ যোগাযোগ</a></div></section>
+<footer>© ২০২৬ শিক্ষক দিচ্ছি ও নিচ্ছি</footer>
+
+<script>
+const get=(k)=>JSON.parse(localStorage.getItem(k)||"[]");
+const put=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+let teachers=get("teachers"), guardians=get("guardians");
+
+teacherForm.onsubmit=e=>{e.preventDefault();teachers.push({name:tn.value,phone:tp.value,qual:tq.value,cls:tc.value,subject:ts.value,area:ta.value,exp:te.value});put("teachers",teachers);e.target.reset();render();alert("শিক্ষক নিবন্ধন সংরক্ষণ হয়েছে।");};
+guardianForm.onsubmit=e=>{e.preventDefault();guardians.push({name:gn.value,phone:gp.value,cls:gc.value,subject:gs.value,area:ga.value,time:gt.value,extra:gx.value});put("guardians",guardians);e.target.reset();adminRender();alert("অভিভাবকের চাহিদা সংরক্ষণ হয়েছে।");};
+
+function render(){let q=query.value.toLowerCase(),s=subject.value,a=area.value.toLowerCase();let x=teachers.filter(t=>(!q||Object.values(t).join(" ").toLowerCase().includes(q))&&(!s||t.subject==s)&&(!a||t.area.toLowerCase().includes(a)));teacherList.innerHTML=x.length?x.map(t=>`<div class="person"><h3>${t.name}</h3><span class="tag">${t.subject}</span><span class="tag">${t.area}</span><p>${t.qual||""} · শ্রেণি: ${t.cls||"প্রযোজ্য নয়"}</p><p>${t.exp||""}</p><a class="btn" href="https://wa.me/88${t.phone.replace(/\\D/g,'')}">WhatsApp</a></div>`).join(""):"<p>এখনও কোনো শিক্ষক নিবন্ধিত নেই।</p>";}
+function login(){if(pass.value==="1234"){loginBox.style.display="none";adminArea.style.display="block";adminRender()}else alert("ভুল পাসওয়ার্ড");}
+function adminRender(){teacherTable.innerHTML="<table><tr><th>নাম</th><th>ফোন</th><th>বিষয়</th><th>এলাকা</th></tr>"+teachers.map(t=>`<tr><td>${t.name}</td><td>${t.phone}</td><td>${t.subject}</td><td>${t.area}</td></tr>`).join("")+"</table>";
+guardianTable.innerHTML="<table><tr><th>অভিভাবক</th><th>ফোন</th><th>শ্রেণি</th><th>বিষয়</th><th>এলাকা</th></tr>"+guardians.map(g=>`<tr><td>${g.name}</td><td>${g.phone}</td><td>${g.cls}</td><td>${g.subject}</td><td>${g.area}</td></tr>`).join("")+"</table>";}
+function clearAll(){if(confirm("সব তথ্য মুছে ফেলবেন?")){teachers=[];guardians=[];put("teachers",teachers);put("guardians",guardians);adminRender();render();}}
+render();
+</script>
+</body></html>
